@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0F6591E54CF930BD68846853 /* Pods_RxSubject_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED9ECC1CA115D0FA83BD0BB7 /* Pods_RxSubject_Tests.framework */; };
+		435433A424D8285D001AA1AF /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435433A324D8285D001AA1AF /* ViewModel.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -30,7 +31,8 @@
 /* Begin PBXFileReference section */
 		2D23BEFB439A4FBCF5386B56 /* Pods-RxSubject_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSubject_Example.release.xcconfig"; path = "Target Support Files/Pods-RxSubject_Example/Pods-RxSubject_Example.release.xcconfig"; sourceTree = "<group>"; };
 		3A5E65CB1183CA5CF57B0F6E /* Pods-RxSubject_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSubject_Tests.release.xcconfig"; path = "Target Support Files/Pods-RxSubject_Tests/Pods-RxSubject_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		57EFCEAC2D7CD2CDBB8FE641 /* RxSubject.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = RxSubject.podspec; path = ../RxSubject.podspec; sourceTree = "<group>"; };
+		435433A324D8285D001AA1AF /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		57EFCEAC2D7CD2CDBB8FE641 /* RxSubject.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = RxSubject.podspec; path = ../RxSubject.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		607FACD01AFB9204008FA782 /* RxSubject_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSubject_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -41,12 +43,12 @@
 		607FACE51AFB9204008FA782 /* RxSubject_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxSubject_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		6A7EE462855E197354AC5377 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		6A7EE462855E197354AC5377 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		8883E2F11DB1D1BCED42EB73 /* Pods_RxSubject_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSubject_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EAB58FE01E9D18C30F72A34 /* Pods-RxSubject_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSubject_Example.debug.xcconfig"; path = "Target Support Files/Pods-RxSubject_Example/Pods-RxSubject_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		A318566F8113061A06C29B5D /* Pods-RxSubject_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSubject_Tests.debug.xcconfig"; path = "Target Support Files/Pods-RxSubject_Tests/Pods-RxSubject_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		ED9ECC1CA115D0FA83BD0BB7 /* Pods_RxSubject_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSubject_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F45D8A3F3E7379CDC1DCCDA8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		F45D8A3F3E7379CDC1DCCDA8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +79,6 @@
 				A318566F8113061A06C29B5D /* Pods-RxSubject_Tests.debug.xcconfig */,
 				3A5E65CB1183CA5CF57B0F6E /* Pods-RxSubject_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -116,6 +117,7 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				435433A324D8285D001AA1AF /* ViewModel.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -227,6 +229,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -314,10 +317,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-RxSubject_Example/Pods-RxSubject_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/RxSubject/RxSubject.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSubject.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -332,6 +337,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				435433A424D8285D001AA1AF /* ViewModel.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

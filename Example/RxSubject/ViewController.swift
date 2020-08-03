@@ -7,18 +7,45 @@
 //
 
 import UIKit
+import RxSwift
 
 class ViewController: UIViewController {
+    
+    let viewModel = ViewModel()
+    let disposeBag = DisposeBag()
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        
+        viewModel.publishProperty = "publishProperty--111"
+        viewModel.publishProperty = "publishProperty--222"
+        viewModel.$publishProperty.subscribe(onNext: { (property) in
+            print(property)
+        }).disposed(by: disposeBag)
+        viewModel.publishProperty = "publishProperty--333"
+        viewModel.publishProperty = "publishProperty--444"
+        
+        viewModel.behaviorProperty = "behaviorProperty--111"
+        viewModel.behaviorProperty = "behaviorProperty--222"
+        viewModel.$behaviorProperty.subscribe(onNext: { (property) in
+            print(property)
+        }).disposed(by: disposeBag)
+        viewModel.behaviorProperty = "behaviorProperty--333"
+        viewModel.behaviorProperty = "behaviorProperty--444"
+        
+        viewModel.replayProperty = "replayProperty--111"
+        viewModel.replayProperty = "replayProperty--222"
+        viewModel.$replayProperty.subscribe(onNext: { (property) in
+            print(property)
+        }).disposed(by: disposeBag)
+        viewModel.replayProperty = "replayProperty--333"
+        viewModel.replayProperty = "replayProperty--444"
+        
+        
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
 
 }
 
